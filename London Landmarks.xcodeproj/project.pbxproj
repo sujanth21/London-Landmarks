@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		83C9AAC41F52AA9500594619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9AAC31F52AA9500594619 /* AppDelegate.swift */; };
-		83C9AAC61F52AA9500594619 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9AAC51F52AA9500594619 /* ViewController.swift */; };
 		83C9AAC91F52AA9500594619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C9AAC71F52AA9500594619 /* Main.storyboard */; };
 		83C9AACB1F52AA9500594619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C9AACA1F52AA9500594619 /* Assets.xcassets */; };
 		83C9AACE1F52AA9500594619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C9AACC1F52AA9500594619 /* LaunchScreen.storyboard */; };
+		83C9AAD71F52AB6100594619 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9AAD61F52AB6100594619 /* TableViewController.swift */; };
+		83C9AAD91F52AB7000594619 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9AAD81F52AB7000594619 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83C9AAC01F52AA9500594619 /* London Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "London Landmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C9AAC31F52AA9500594619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83C9AAC51F52AA9500594619 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83C9AAC81F52AA9500594619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83C9AACA1F52AA9500594619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C9AACD1F52AA9500594619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83C9AACF1F52AA9500594619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C9AAD61F52AB6100594619 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		83C9AAD81F52AB7000594619 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		83C9AAC21F52AA9500594619 /* London Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				83C9AAC31F52AA9500594619 /* AppDelegate.swift */,
-				83C9AAC51F52AA9500594619 /* ViewController.swift */,
+				83C9AAD51F52AB2200594619 /* Supporting Files */,
 				83C9AAC71F52AA9500594619 /* Main.storyboard */,
+				83C9AAD61F52AB6100594619 /* TableViewController.swift */,
+				83C9AAD81F52AB7000594619 /* TableViewCell.swift */,
+			);
+			path = "London Landmarks";
+			sourceTree = "<group>";
+		};
+		83C9AAD51F52AB2200594619 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83C9AAC31F52AA9500594619 /* AppDelegate.swift */,
 				83C9AACA1F52AA9500594619 /* Assets.xcassets */,
 				83C9AACC1F52AA9500594619 /* LaunchScreen.storyboard */,
 				83C9AACF1F52AA9500594619 /* Info.plist */,
 			);
-			path = "London Landmarks";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C9AAC61F52AA9500594619 /* ViewController.swift in Sources */,
+				83C9AAD91F52AB7000594619 /* TableViewCell.swift in Sources */,
 				83C9AAC41F52AA9500594619 /* AppDelegate.swift in Sources */,
+				83C9AAD71F52AB6100594619 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +169,7 @@
 				83C9AACD1F52AA9500594619 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
