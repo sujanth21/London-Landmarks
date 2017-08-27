@@ -9,44 +9,41 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    var imageList = ["BigBen", "BuckinghamPalace", "LondonEye", "St-Pauls", "TowerBridge", "WestminsterAbbey"]
+    var titleList = ["Big Ben", "Buckingham Palace", "London Eye", "St-Pauls Cathedral", "Tower Bridge", "Westminster Abbey"]
+    var subtitle = ["London SW1A 0AA, UK", "London SW1A 1AA, UK", "London SE1 7PB, UK", "London EC4M 8AD, UK", "London Borough of Southwark", "London SW1P 3PA, UK"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return titleList.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        
+        cell.cellImage.image = UIImage(named: "\(imageList[indexPath.row])")
+        cell.cellTitle.text = "\(titleList[indexPath.row])"
+        cell.cellSubtitle.text = "\(subtitle[indexPath.row])"
+        
         return cell
     }
-    */
-
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

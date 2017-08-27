@@ -60,6 +60,7 @@
 				83C9AAC71F52AA9500594619 /* Main.storyboard */,
 				83C9AAD61F52AB6100594619 /* TableViewController.swift */,
 				83C9AAD81F52AB7000594619 /* TableViewCell.swift */,
+				83C9AACF1F52AA9500594619 /* Info.plist */,
 			);
 			path = "London Landmarks";
 			sourceTree = "<group>";
@@ -70,7 +71,6 @@
 				83C9AAC31F52AA9500594619 /* AppDelegate.swift */,
 				83C9AACA1F52AA9500594619 /* Assets.xcassets */,
 				83C9AACC1F52AA9500594619 /* LaunchScreen.storyboard */,
-				83C9AACF1F52AA9500594619 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
