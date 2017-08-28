@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830A59851F54D43A00536F88 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830A59841F54D43A00536F88 /* MapKit.framework */; };
 		83C9AAC41F52AA9500594619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9AAC31F52AA9500594619 /* AppDelegate.swift */; };
 		83C9AAC91F52AA9500594619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C9AAC71F52AA9500594619 /* Main.storyboard */; };
 		83C9AACB1F52AA9500594619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C9AACA1F52AA9500594619 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830A59841F54D43A00536F88 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		83C9AAC01F52AA9500594619 /* London Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "London Landmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C9AAC31F52AA9500594619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83C9AAC81F52AA9500594619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830A59851F54D43A00536F88 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		830A59831F54D43A00536F88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				830A59841F54D43A00536F88 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83C9AAB71F52AA9500594619 = {
 			isa = PBXGroup;
 			children = (
 				83C9AAC21F52AA9500594619 /* London Landmarks */,
 				83C9AAC11F52AA9500594619 /* Products */,
+				830A59831F54D43A00536F88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +130,11 @@
 				TargetAttributes = {
 					83C9AABF1F52AA9500594619 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -337,6 +354,7 @@
 				83C9AAD41F52AA9500594619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

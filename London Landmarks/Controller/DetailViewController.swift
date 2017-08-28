@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import MapKit
 
 class DetailViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var detailViewTitle: UILabel!
+    @IBOutlet weak var detailViewSubtitle: UILabel!
+    @IBOutlet weak var detailViewDescription: UITextView!
+    @IBOutlet weak var detailMapView: MKMapView!
+    @IBOutlet weak var directionBtn: UIButton!
+    
+    
     
     var landmarkName: String!
     var landmarkImage: String!
     var landmarkSubtitle: String!
-    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +37,7 @@ class DetailViewController: UIViewController {
     }
     
     
-
+    @IBAction func directionBtnPressed(_ sender: UIButton) {
+    }
+    
 }

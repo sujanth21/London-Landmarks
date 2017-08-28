@@ -142,6 +142,9 @@
                                 <state key="normal" title="Direction">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="directionBtnPressed:" destination="x5B-eY-yDk" eventType="touchUpInside" id="xgN-oF-2Ay"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -169,6 +172,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="detailMapView" destination="Z03-5D-hwG" id="vVC-Wk-XBA"/>
+                        <outlet property="detailViewDescription" destination="fF9-zE-a8a" id="Kp8-Cx-Dks"/>
+                        <outlet property="detailViewSubtitle" destination="fOw-Kz-Zor" id="6dL-rM-5Hq"/>
+                        <outlet property="detailViewTitle" destination="xsE-Z0-wh6" id="B4y-uQ-tq7"/>
+                        <outlet property="directionBtn" destination="A3x-Qh-Mbz" id="4Md-TD-mEQ"/>
                         <outlet property="imageView" destination="jqu-QT-MvH" id="yKD-at-Ysz"/>
                     </connections>
                 </viewController>
