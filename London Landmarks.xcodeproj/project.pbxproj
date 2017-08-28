@@ -13,6 +13,7 @@
 		83C9AACE1F52AA9500594619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C9AACC1F52AA9500594619 /* LaunchScreen.storyboard */; };
 		83C9AAD71F52AB6100594619 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9AAD61F52AB6100594619 /* TableViewController.swift */; };
 		83C9AAD91F52AB7000594619 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9AAD81F52AB7000594619 /* TableViewCell.swift */; };
+		83C9AADC1F54180000594619 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9AADB1F54180000594619 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		83C9AACF1F52AA9500594619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C9AAD61F52AB6100594619 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		83C9AAD81F52AB7000594619 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		83C9AADB1F54180000594619 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,9 @@
 		83C9AAC21F52AA9500594619 /* London Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				83C9AADA1F5417D400594619 /* Controller */,
 				83C9AAD51F52AB2200594619 /* Supporting Files */,
 				83C9AAC71F52AA9500594619 /* Main.storyboard */,
-				83C9AAD61F52AB6100594619 /* TableViewController.swift */,
 				83C9AAD81F52AB7000594619 /* TableViewCell.swift */,
 				83C9AACF1F52AA9500594619 /* Info.plist */,
 			);
@@ -73,6 +75,15 @@
 				83C9AACC1F52AA9500594619 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83C9AADA1F5417D400594619 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83C9AAD61F52AB6100594619 /* TableViewController.swift */,
+				83C9AADB1F54180000594619 /* DetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				83C9AAD91F52AB7000594619 /* TableViewCell.swift in Sources */,
 				83C9AAC41F52AA9500594619 /* AppDelegate.swift in Sources */,
 				83C9AAD71F52AB6100594619 /* TableViewController.swift in Sources */,
+				83C9AADC1F54180000594619 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
