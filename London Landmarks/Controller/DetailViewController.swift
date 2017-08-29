@@ -24,6 +24,9 @@ class DetailViewController: UIViewController {
     var landmarkImage: String!
     var landmarkSubtitle: String!
     var landmarkDescription: String!
+    var landmarkLatitude: Double!
+    var landmarkLongitude: Double!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +36,17 @@ class DetailViewController: UIViewController {
         detailViewTitle.text = landmarkName
         detailViewSubtitle.text = landmarkSubtitle
         detailViewDescription.text = landmarkDescription
+        
+        let span = MKCoordinateSpanMake(0.005, 0.005)
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2DMake(landmarkLatitude, landmarkLongitude), span: span)
+        detailMapView.setRegion(region, animated: true)
+        
+        let pinLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(landmarkLatitude, landmarkLongitude)
+        let pinAnnotation = MKPointAnnotation()
+        pinAnnotation.coordinate = pinLocation
+        pinAnnotation.title = detailViewTitle.text
+        pinAnnotation.subtitle = detailViewSubtitle.text
+        detailMapView.addAnnotation(pinAnnotation)
         
     }
 

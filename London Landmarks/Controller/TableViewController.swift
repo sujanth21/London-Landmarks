@@ -22,6 +22,10 @@ class TableViewController: UITableViewController {
         "Tower Bridge is a combined bascule and suspension bridge in London built between 1886 and 1894. The bridge crosses the River Thames close to the Tower of London and has become an iconic symbol of London",
         "Westminster Abbey, formally titled the Collegiate Church of St Peter at Westminster, is a large, mainly Gothic abbey church in the City of Westminster, London, just to the west of the Palace of Westminster."
     ]
+    
+    var latitude = [51.50072919999999, 51.49916839999999, 51.50090949999999, 51.513191, 51.5041673, 51.4994174]
+    
+    var longitude = [-0.12462540000001354, -0.1431572999999844, -0.11953229999994619, -0.09759899999994559, -0.07627130000003035, -0.1275705000000471]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +106,8 @@ class TableViewController: UITableViewController {
                 detailViewController.landmarkImage = imageList[indexPath.row] as String
                 detailViewController.landmarkSubtitle = subtitle[indexPath.row] as String
                 detailViewController.landmarkDescription = landmarkDescription[indexPath.row] as String
+                detailViewController.landmarkLatitude = latitude[indexPath.row] as Double
+                detailViewController.landmarkLongitude = longitude[indexPath.row] as Double
             }
         }
     }
