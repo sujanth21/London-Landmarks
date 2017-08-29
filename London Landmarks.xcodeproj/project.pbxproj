@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		830A59851F54D43A00536F88 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830A59841F54D43A00536F88 /* MapKit.framework */; };
+		830A59881F54D4CD00536F88 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A59871F54D4CD00536F88 /* RoundedCorner.swift */; };
 		83C9AAC41F52AA9500594619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9AAC31F52AA9500594619 /* AppDelegate.swift */; };
 		83C9AAC91F52AA9500594619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C9AAC71F52AA9500594619 /* Main.storyboard */; };
 		83C9AACB1F52AA9500594619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C9AACA1F52AA9500594619 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		830A59841F54D43A00536F88 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		830A59871F54D4CD00536F88 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		83C9AAC01F52AA9500594619 /* London Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "London Landmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C9AAC31F52AA9500594619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83C9AAC81F52AA9500594619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		830A59861F54D4A500536F88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				830A59871F54D4CD00536F88 /* RoundedCorner.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		83C9AAB71F52AA9500594619 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		83C9AAC21F52AA9500594619 /* London Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				830A59861F54D4A500536F88 /* View */,
 				83C9AADA1F5417D400594619 /* Controller */,
 				83C9AAD51F52AB2200594619 /* Supporting Files */,
 				83C9AAC71F52AA9500594619 /* Main.storyboard */,
@@ -176,6 +187,7 @@
 			files = (
 				83C9AAD91F52AB7000594619 /* TableViewCell.swift in Sources */,
 				83C9AAC41F52AA9500594619 /* AppDelegate.swift in Sources */,
+				830A59881F54D4CD00536F88 /* RoundedCorner.swift in Sources */,
 				83C9AAD71F52AB6100594619 /* TableViewController.swift in Sources */,
 				83C9AADC1F54180000594619 /* DetailViewController.swift in Sources */,
 			);

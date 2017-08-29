@@ -23,12 +23,17 @@ class DetailViewController: UIViewController {
     var landmarkName: String!
     var landmarkImage: String!
     var landmarkSubtitle: String!
+    var landmarkDescription: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = landmarkName
         imageView.image = UIImage(named: landmarkImage)
+        detailViewTitle.text = landmarkName
+        detailViewSubtitle.text = landmarkSubtitle
+        detailViewDescription.text = landmarkDescription
+        
     }
 
     override func didReceiveMemoryWarning() {

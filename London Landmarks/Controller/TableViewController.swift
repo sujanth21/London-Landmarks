@@ -13,6 +13,15 @@ class TableViewController: UITableViewController {
     var imageList = ["BigBen", "BuckinghamPalace", "LondonEye", "St-Pauls", "TowerBridge", "WestminsterAbbey"]
     var titleList = ["Big Ben", "Buckingham Palace", "London Eye", "St-Pauls Cathedral", "Tower Bridge", "Westminster Abbey"]
     var subtitle = ["London SW1A 0AA, UK", "London SW1A 1AA, UK", "London SE1 7PB, UK", "London EC4M 8AD, UK", "London Borough of Southwark", "London SW1P 3PA, UK"]
+    
+    var landmarkDescription = [
+        "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London and is usually extended to refer to both the clock and the clock tower as well.",
+        "Buckingham Palace is the London residence and administrative headquarters of the reigning monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.",
+        "The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London. As of January 2015, it has been advertised as the Coca-Cola London Eye. The structure is 443 feet tall and the wheel has a diameter of 394 feet.",
+        "St Paul's Cathedral, London, is an Anglican cathedral, the seat of the Bishop of London and the mother church of the Diocese of London. It sits on Ludgate Hill at the highest point of the City of London and is a Grade 1 listed building.",
+        "Tower Bridge is a combined bascule and suspension bridge in London built between 1886 and 1894. The bridge crosses the River Thames close to the Tower of London and has become an iconic symbol of London",
+        "Westminster Abbey, formally titled the Collegiate Church of St Peter at Westminster, is a large, mainly Gothic abbey church in the City of Westminster, London, just to the west of the Palace of Westminster."
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,6 +101,7 @@ class TableViewController: UITableViewController {
                 detailViewController.landmarkName = titleList[indexPath.row] as String
                 detailViewController.landmarkImage = imageList[indexPath.row] as String
                 detailViewController.landmarkSubtitle = subtitle[indexPath.row] as String
+                detailViewController.landmarkDescription = landmarkDescription[indexPath.row] as String
             }
         }
     }
