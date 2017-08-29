@@ -57,6 +57,8 @@ class DetailViewController: UIViewController {
     
     
     @IBAction func directionBtnPressed(_ sender: UIButton) {
+        
+        UIApplication.shared.open(URL(string: "http://maps.apple.com/maps?daddr=\(landmarkLatitude),\(landmarkLongitude)")!, options:[ : ], completionHandler: nil)
     }
     
 }
